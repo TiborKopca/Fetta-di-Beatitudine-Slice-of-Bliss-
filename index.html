@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pizzeria! Enjoy our delicious pizzas and discover our special events and promotions."
+    />
+    <meta name="keywords" content="pizzeria, pizza, specials, events" />
+    <meta property="og:title" content="Home - Pizzeria" />
+    <meta
+      property="og:description"
+      content="Welcome to Pizzeria! Discover our delicious pizzas, special offers, and upcoming events."
+    />
+    <meta property="og:image" content="images/home-hero.jpg" />
+    <meta property="og:url" content="https://www.yourpizzeriawebsite.com" />
+
+    <title>Pizzeria - Home</title>
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+
+    <!-- <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" /> -->
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="/js/menu.js" defer></script> -->
+    <script src="/js/countdown.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Include header -->
+    <!-- <div data-include="/components/header.html"></div> -->
+
+    <main class="main">
+      <section class="container">
+        
+          <img
+            src="/img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+            class="logo__img"
+        />
+          <h1 class="title">Welcome to Our Pizzeria!</h1>
+          <p class="subtitle">Enjoy our delicious pizzas made with the freshest ingredients.</p>
+          
+          <section class="countdown__container">
+          <h3 class="countdown__title">We're opening in:</h3>
+          <div id="countdown" class="countdown">
+            <div id="timer" class="countdown__timer">
+              <div id="days" class="timer__item"></div>
+              <div id="hours" class="timer__item"></div>
+              <div id="minutes" class="timer__item"></div>
+              <div id="seconds" class="timer__item"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Include footer -->
+    <!-- <div data-include="footer.html"></div> -->
+
+    <!-- <script src="/js/loadComponents.js"></script> -->
+  </body>
+</html>

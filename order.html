@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Order your favorite pizzas online for delivery or pickup."
+    />
+    <meta
+      name="keywords"
+      content="order online, pizza delivery, pickup, payment options"
+    />
+    <meta property="og:title" content="Order Online - Pizzeria" />
+    <meta
+      property="og:description"
+      content="Place your online order for delivery or pickup and enjoy our delicious pizzas from the comfort of your home."
+    />
+    <meta property="og:image" content="images/order.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.yourpizzeriawebsite.com/order.html"
+    />
+    <title>Order Online - Pizzeria</title>
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="preloader.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Include header -->
+    <!-- <div data-include="/components/header.html"></div> -->
+    <header>
+      <div class="container">
+        <h1>Pizzeria</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- <div id="container"> -->
+
+    <main>
+      <div class="container">
+        <section class="order-online">
+          <h2>Place Your Order</h2>
+          Online Ordering Form Please fill out the form below to place your
+          order for delivery or pickup.
+
+          <form id="orderForm">
+            <h2>Order Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required />
+
+            <label for="orderType">Order Type:</label>
+            <select id="orderType" name="orderType" required>
+              <option value="delivery">Delivery</option>
+              <option value="pickup">Pickup</option>
+            </select>
+
+            <h3>Select Your Pizzas:</h3>
+            <label for="pizza1">Pizza 1:</label>
+            <select id="pizza1" name="pizza1">
+              <option value="margherita">Margherita - €8.00</option>
+              <option value="pepperoni">Pepperoni - €9.50</option>
+              <option value="quattroFormaggi">Quattro Formaggi - €11.00</option>
+              <option value="capricciosa">Capricciosa - €12.00</option>
+              <option value="vegetariana">Vegetariana - €10.00</option>
+              <option value="salamePeperoni">Salame e Peperoni - €13.00</option>
+              <option value="diavola">Diavola - €13.50</option>
+              <option value="truffleFunghi">Truffle e Funghi - €14.00</option>
+              <option value="prosciuttoRucola">
+                Prosciutto e Rucola - €12.50
+              </option>
+              <option value="speciale">
+                Fetta di Beatitudine Speciale - €15.00
+              </option>
+            </select>
+            <label for="pizza2">Pizza 2:</label>
+            <select id="pizza2" name="pizza2">
+              <option value="none">None</option>
+              <option value="margherita">Margherita - €8.00</option>
+              <option value="pepperoni">Pepperoni - €9.50</option>
+              <option value="quattroFormaggi">Quattro Formaggi - €11.00</option>
+              <option value="capricciosa">Capricciosa - €12.00</option>
+              <option value="vegetariana">Vegetariana - €10.00</option>
+              <option value="salamePeperoni">Salame e Peperoni - €13.00</option>
+              <option value="diavola">Diavola - €13.50</option>
+              <option value="truffleFunghi">Truffle e Funghi - €14.00</option>
+              <option value="prosciuttoRucola">
+                Prosciutto e Rucola - €12.50
+              </option>
+              <option value="speciale">
+                Fetta di Beatitudine Speciale - €15.00
+              </option>
+            </select>
+
+            <label for="additionalItems">Additional Items:</label>
+
+            <textarea
+              id="additionalItems"
+              name="additionalItems"
+              rows="4"
+              cols="50"
+              placeholder="Enter any additional items or special instructions"
+            ></textarea>
+            <h3>Payment Options:</h3>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+              <option value="cash">Cash on Delivery</option>
+              <option value="creditCard">Credit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Place Order</button>
+          </form>
+          <p>Information about delivery areas, times, and payment options.</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Include footer -->
+    <!-- <div data-include="footer.html"></div> -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

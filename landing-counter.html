@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Pizzeria! Enjoy our delicious pizzas and discover our special events and promotions.">
+    <meta name="keywords" content="pizzeria, pizza, specials, events">
+    <meta property="og:title" content="Home - Pizzeria">
+    <meta property="og:description" content="Welcome to Pizzeria! Discover our delicious pizzas, special offers, and upcoming events.">
+    <meta property="og:image" content="images/home-hero.jpg">
+    <meta property="og:url" content="https://www.yourpizzeriawebsite.com">
+
+    <title>Pizzeria | Counter</title>
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="preloader.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Include header -->
+    <!-- <div data-include="/components/header.html"></div> -->
+
+
+ 
+    <main>
+      <div class="container">
+          <section id="welcome">
+              <h2>Welcome to Our Pizzeria!</h2>
+              <p>Enjoy our delicious pizzas made with the freshest ingredients.</p>
+              <div id="countdown">
+                  <h3>We're opening in:</h3>
+                  <div id="timer">
+                      <div id="days"></div>
+                      <div id="hours"></div>
+                      <div id="minutes"></div>
+                      <div id="seconds"></div>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </main>
+
+    <!-- Include footer -->
+    <!-- <div data-include="footer.html"></div> -->
+    <script src="/js/countdown.js"></script>
+</body>
+
+
+
+</html>

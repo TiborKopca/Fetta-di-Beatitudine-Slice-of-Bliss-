@@ -1,0 +1,88 @@
+/* *********************************** */
+@import url(normalize.min.css);
+@import url(reset.css);
+
+/* *********************************** */
+/* *** GENERAL STYLES *** */
+/* *********************************** */
+
+/* ******************************** */
+/* TYPOGRAPHY */
+/* ******************************** */
+@font-face {
+  font-family: "Quicksand-light";
+  src: local("Quicksand-light"),
+    url("../font/Quicksand/Quicksand-Light.woff2") format("woof2"),
+    url("../font/Quicksand/static/Quicksand-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: local("Quicksand-medium"),
+    url("../font/Quicksand/Quicksand-Medium.woff2") format("woof2"),
+    url("../font/Quicksand/static/Quicksand-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand-bold";
+  src: local("Quicksand-bold"),
+    url("../font/Quicksand/Quicksand-Bold.woff2") format("woof2"),
+    url("../font/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: local("Quicksand-regular"),
+    url("../font/Quicksand/Quicksand-Regular.woff2") format("woof2"),
+    url("../font/Quicksand/static/Quicksand-Regular.ttf") format("truetype");
+}@font-face {
+  font-family: "Quicksand-semibold";
+  src: local("Quicksand-semibold"),
+    url("../font/Quicksand/Quicksand-SemiBold.woff2") format("woof2"),
+    url("../font/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
+}
+:root {
+  /* ******************************** */
+  /* TYPOGRAPHY LOCAL */
+  /* ******************************** */
+   --font-Quicksand-local-light: "Quicksand-light", Fallback, sans-serif;
+   --font-Quicksand-local-regular: "Quicksand-regular", Fallback, sans-serif;
+   --font-Quicksand-local-bold: "Quicksand-bold", Fallback, sans-serif;
+   --font-Quicksand-local-semibold: "Quicksand-semibold", Fallback, sans-serif;
+   --font-Quicksand-local-medium: "Quicksand-medium", Fallback, sans-serif;
+  /* ******************************** */
+  /* COLORS */
+  /* ******************************** */
+  --bg-color-card: #f7f4f4;
+  --bg-color-card-semi-transparent: rgba(247, 244, 244, 0.6);
+  --text-color-primary: #f3f3f3;
+  --text-color-secondary: #181818;
+
+  --color-yellow: #EDA72E;
+  --color-beige: #EACE90;
+  --color-red: #93250C;
+  --color-green: #6B9F64;
+  --color-brown: #69443D;
+  --color-grey-light: #CCD5AF;
+
+  --bg-color-header: rgba(237, 167, 46, 80%);--bg-color-footer: rgba(237, 167, 46, 95%);
+}
+html {
+  font-family: var(--font-Quicksand-local-light);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* color: #333; */
+  background-color: var(--color-grey-light);
+}
+
+
+main {
+  padding-top: 6rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+
