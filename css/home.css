@@ -7,7 +7,7 @@
 .hero__img {
   width: 100svw;
   height: 100svh;
-  background-image: url("/img/avif/home_desktop.avif");
+  background-image: url("../img/avif/home_desktop.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

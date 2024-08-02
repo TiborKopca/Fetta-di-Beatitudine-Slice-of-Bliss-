@@ -2,7 +2,7 @@
   width: 100svw;
   height: 100svh;
   padding-top: 0;
-  background-image: url("/img/avif/counter_desktop.avif");
+  background-image: url("../img/avif/counter_desktop.avif");
 }
 
 .container {
