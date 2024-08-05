@@ -250,3 +250,10 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: -0.0875rem;
 }
+
+@media screen and (max-width: 1200px){
+    .aside__darkmodebutton{
+        display: none;
+    }
+    
+}

@@ -6,9 +6,9 @@ hamburgerMenu.addEventListener('click', ()=>{
     let visible = document.querySelector('.nav').classList.toggle('nav__aside-visible');
     // console.log(visible);
     if(visible){
-        hamburgerMenu.src = '/svg/X-brown_Vector.svg';
+        hamburgerMenu.src = './svg/X-brown_Vector.svg';
     }else{
-        hamburgerMenu.src = '/svg/Hamburger_Vector.svg';
+        hamburgerMenu.src = './svg/Hamburger_Vector.svg';
     }
 })
 
