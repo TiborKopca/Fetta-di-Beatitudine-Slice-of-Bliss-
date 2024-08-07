@@ -55,7 +55,7 @@
     <script src="./js/menu.js" defer></script>
   </head>
 
-  <body class="body">
+  <body class="body grey-light">
     <!-- Include header -->
     <!-- <div data-include="/components/header.html"></div> -->
 
@@ -71,7 +71,7 @@
         <nav class="nav">
           <ul class="nav__links">
             <li class="links__item">
-              <a href="/home.html" class="nav__item link__active">Home</a>
+              <a href="home.html" class="nav__item link__active">Home</a>
             </li>
             <li class="links__item">
               <a href="about.html" class="nav__item">About</a>
@@ -105,14 +105,14 @@
 
     <main class="main" id="main">
       <div class="hero__img">
-        <div class="aside__darkmodebutton"><img src="./svg/Moon_Vector.svg" alt="" class="darkmode__icon"></div>
+        <div class="aside__darkmodebutton grey-light"><img src="./svg/Moon_Vector.svg" alt="" class="darkmode__icon moon"></div>
 
         <section class="title__container">
           <h1 class="title">Welcome to Fetta di Beatitudine</h1>
           <article class="subtitle">
-            <p>where every bite of our artisan pizza is a journey to bliss.</p><p>Crafted
+            <p class="subtitle__text">where every bite of our artisan pizza is a journey to bliss.</p><p class="subtitle__text">Crafted
             with love, fresh ingredients, and an Italian touch, we invite you to
-            savor the happiness in every slice.</p><p>Buon Appetito!"</p>
+            savor the happiness in every slice.</p><p class="subtitle__text">Buon Appetito!"</p>
           </article>
 
         </section>
@@ -122,9 +122,9 @@
             Reserve a table!
           </button>
           <article class="aside__openinghours">
-            <p>Open every day from 
+            <p class="openinghours__title">Open every day from
               15:00 - 24:00</p>
-            <p>+34 999 556 775</p>
+            <p class="openinghours__phone">+34 999 556 775</p>
           </article>
         </section>
       </div>
@@ -138,23 +138,23 @@
           </p>
         </article>
         <article class="promotion__right">
-          <img
-            src="./svg/game-icons_full-pizza.svg"
-            alt="pizza"
-            class="promotion__img"
-          />
           <button class="discount" onclick="location.href='discounts.html'">
             Get the discount
           </button>
         </article>
+        <img
+          src="./svg/game-icons_full-pizza.svg"
+          alt="pizza"
+          class="promotion__img"
+        />
       </section>
 
       <section class="fixedimg">
-        <img
+        <!-- <img
           src="./img/avif/home-table_desktop.avif"
           alt="table with pizzas"
           class="fixedimg__img"
-        />
+        /> -->
       </section>
 
       <section class="pizzeriainfo">

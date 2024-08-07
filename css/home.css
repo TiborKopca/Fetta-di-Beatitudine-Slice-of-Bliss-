@@ -3,6 +3,7 @@
   /* height: 100svh; */
   padding-top: 0;
   font-family: "Quicksand-medium";
+  text-align: center;
 }
 .hero__img {
   width: 100svw;
@@ -15,66 +16,126 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .hero__img {
+    width: 100svw;
+    height: auto;
+    background-image: url("../img/avif/home_mobile.avif");
+    justify-content: center;
+  }
 }
 .title__container {
-  position: relative;
-  top: 3rem;
-  left: 8rem;
-  width: 27rem;
-  height: auto;
-  flex-shrink: 0;
+  /* width: 42rem;
+  height: 100%;
+  margin-bottom: 43rem;
+  padding: 8rem 6rem; */
+
+  width: 68rem;
+  height: 100%;
+  margin-bottom: 43rem;
+  padding: 8rem 6rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  gap: 2rem;
+  justify-content: center;
+  gap: 9rem;
+}
+@media screen and (max-width: 1200px) {
+  .title__container {
+    width: 100%;
+    padding: 7rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0rem;
+  }
 }
 .title {
   color: var(--text-color-secondary);
   font-size: 2.8rem;
-  font-size: 4rem;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 125.175%; /* 7.5105rem */
   letter-spacing: 0.42rem;
 }
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 3rem;
+  }
+}
 .subtitle {
   display: flex;
 
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1.6rem;
   padding: 1.5rem;
   color: var(--text-color-secondary);
-  border-radius: 0.9375rem;
+  border-radius: 1rem;
   background: var(--bg-color-card-semi-transparent);
+}
+.subtitle__text {
+  font-family: "Quicksand-regular";
+  color: var(--text-color-secondary);
+
   text-align: center;
+  font-family: Quicksand-regular;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 125.175%; /* 3.16613rem */
   letter-spacing: 0.17706rem;
-  font-size: 1.4rem;
+}
+@media screen and (max-width: 1200px) {
+  .subtitle__text {
+    font-size: 1.5rem;
+  }
 }
 .aside {
-  position: absolute;
-  top: 30rem;
-  right: 0rem;
-  width: 27rem;
-  height: auto;
-  flex-shrink: 0;
+  /* position: absolute; */
+  /* top: 30rem; */
+  /* right: 0rem; */
+  flex: 0 1 39rem;
+  /* width: 25rem; */
+  /* height: auto; */
+  /* flex-shrink: 0; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   gap: 12rem;
+  margin-right: 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .aside {
+    /* width: 95%; */
+    flex: 0 1 29rem;
+    margin: 1rem 1rem 13rem 1rem;
+    /* padding: 7rem 0rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 2rem; */
+    /* margin-bottom: 0rem; */
+  }
 }
 .aside__darkmodebutton {
   position: absolute;
   top: 11rem;
   right: 0rem;
-  background: var(--color-grey-light);
+  /* background: var(--color-grey-light); */
   padding: 1rem;
   border: 1px solid var(--text-color-secondary);
   border-radius: 9px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .aside__darkmodebutton {
+    display: none;
+  }
 }
 .aside__discount {
   display: inline-flex;
@@ -85,7 +146,7 @@
   background: linear-gradient(180deg, rgb(73, 16, 16), rgb(110, 7, 7));
 
   color: var(--text-color-primary);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: Quicksand-bold;
   border: none;
   box-shadow: 0px 4px 23.9px 0px #000;
@@ -99,14 +160,29 @@
   font-style: normal;
   font-weight: 600;
   line-height: 125.175%; /* 3.16613rem */
-  letter-spacing: 0.17706rem;
-  font-size: 1.4rem;
-  padding: 1.5rem;
-}
+  letter-spacing: 0.18rem;
+  font-size: 2rem;
+  padding: 2rem;
 
+  font-family: Quicksand-regular;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+.openinghours__title {
+  font-family: "Quicksand-medium";
+  font-size: 2.5rem;
+}
+.openinghours__phone {
+  font-size: 2.8rem;
+}
 .promotion {
+  position: relative;
   width: 80%;
-  margin: 4.5rem auto;
+  margin: 10rem auto;
   background-color: var(--color-beige);
 
   display: flex;
@@ -115,29 +191,70 @@
   padding: 2.5rem;
   border-radius: 3rem;
 }
+@media screen and (max-width: 1200px) {
+  .promotion {
+    width: 95%;
+    /* width: 29rem; */
+    flex-direction: column;
+    padding: 6rem 1rem;
+    border-radius: 0;
+    gap: 6rem;
+  }
+}
 .promotion__left {
-  flex: 1;
+  flex: 2;
   /* width: 70%; */
-  padding: 0rem 3rem;
+  padding: 0rem 8rem;
+}
+@media screen and (max-width: 1200px) {
+  .promotion__left {
+    padding: 0rem;
+  }
 }
 .promotion__right {
   flex: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 4rem;
 }
+
 .promotion__title {
   color: #a00f0f;
   /* text-align: center; */
   font-family: "Quicksand-medium";
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  .promotion__title {
+    font-size: 2rem;
+  }
+}
 .promotion__text {
-  font-family: "Quicksand-light";
-  font-size: 2rem;
+  font-family: "Quicksand-regular";
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .promotion__text {
+    font-size: 1.7rem;
+  }
 }
 .promotion__img {
+  position: absolute;
   margin-left: auto;
   margin-bottom: 3rem;
+  right: 7rem;
+}
+@media screen and (max-width: 1200px) {
+  .promotion__img {
+    margin-bottom: 5rem;
+    right: 1rem;
+    top: -4rem;
+    height: 9rem;
+  }
 }
 .discount {
   display: inline-flex;
@@ -148,25 +265,40 @@
   background: linear-gradient(180deg, rgb(73, 16, 16), rgb(110, 7, 7));
 
   color: var(--text-color-primary);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: Quicksand-bold;
   border: none;
   box-shadow: 0px 4px 23.9px 0px #000;
 }
-
+.fixedimg {
+  background-image: url(../img/avif/home-table_desktop.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) {
+  .fixedimg {
+    background-image: url(../img/avif/home-table_mobile.avif);
+  }
+}
+/* .fixedimg__img{
+    width: 100%;
+} */
 .pizzeriainfo {
   width: 80%;
-  margin: 4.5rem auto;
+  margin: 14rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-.pizzeriainfo__title {
+.pizzeriainfo__title, .top__title {
   color: var(--color-brown);
   text-align: center;
   font-family: "Quicksand-medium";
-  font-size: 4rem;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -174,7 +306,11 @@
 .pizzeriainfo__text {
   color: var(--text-color-primary);
   font-family: "Quicksand-medium";
-  font-size: 2rem;
+
+font-size: 3.2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .signaturepizza {
   width: 80%;
@@ -192,14 +328,7 @@
   gap: 2rem;
   flex-direction: column;
 }
-.top__title {
-  color: var(--color-brown);
-  font-family: "Quicksand-medium";
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
+
 .top__text {
   color: var(--text-color-secondary);
   font-family: "Quicksand-light";
@@ -224,36 +353,27 @@
 .article__bottom-content {
   width: 70%;
   display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 2rem;
-    align-items: center;
-    
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
 }
 .bottom__title {
   color: var(--text-color-secondary);
 
   text-align: center;
-  
+
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-.bottom__text{
-    color: var(--text-color-secondary);
+.bottom__text {
+  color: var(--text-color-secondary);
 
-
-font-size: 1.3rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.0875rem;
-}
-
-@media screen and (max-width: 1200px){
-    .aside__darkmodebutton{
-        display: none;
-    }
-    
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0875rem;
 }
