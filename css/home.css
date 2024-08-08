@@ -24,25 +24,18 @@
     width: 100svw;
     height: auto;
     background-image: url("../img/avif/home_mobile.avif");
+    background-position: top center;
     justify-content: center;
   }
 }
 .title__container {
-  /* width: 42rem;
-  height: 100%;
-  margin-bottom: 43rem;
-  padding: 8rem 6rem; */
-
-  width: 68rem;
-  height: 100%;
-  margin-bottom: 43rem;
-  padding: 8rem 6rem;
-
+  padding-left: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 9rem;
+  flex: 0 1 58rem;
 }
 @media screen and (max-width: 1200px) {
   .title__container {
@@ -57,7 +50,7 @@
 .title {
   color: var(--text-color-secondary);
   font-size: 2.8rem;
-  font-size: 6rem;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 125.175%; /* 7.5105rem */
@@ -96,13 +89,7 @@
   }
 }
 .aside {
-  /* position: absolute; */
-  /* top: 30rem; */
-  /* right: 0rem; */
   flex: 0 1 39rem;
-  /* width: 25rem; */
-  /* height: auto; */
-  /* flex-shrink: 0; */
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -270,6 +257,13 @@
   border: none;
   box-shadow: 0px 4px 23.9px 0px #000;
 }
+@media screen and (max-width: 1200px) {
+  .discount,
+  .aside__discount {
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+  }
+}
 .fixedimg {
   background-image: url(../img/avif/home-table_desktop.avif);
   background-size: cover;
@@ -294,7 +288,8 @@
   justify-content: center;
   gap: 2rem;
 }
-.pizzeriainfo__title, .top__title {
+.pizzeriainfo__title,
+.top__title {
   color: var(--color-brown);
   text-align: center;
   font-family: "Quicksand-medium";
@@ -303,14 +298,26 @@
   font-weight: 500;
   line-height: normal;
 }
+@media screen and (max-width: 1200px) {
+  .pizzeriainfo__title,
+  .top__title {
+    font-size: 2.5rem;
+  }
+}
 .pizzeriainfo__text {
   color: var(--text-color-primary);
   font-family: "Quicksand-medium";
 
-font-size: 3.2rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 1200px) {
+  .pizzeriainfo__text {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 }
 .signaturepizza {
   width: 80%;
@@ -322,6 +329,13 @@ line-height: normal;
   padding: 2.5rem;
   background-color: var(--bg-color-card);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1200px) {
+  .signaturepizza {
+    width: 100%;
+    margin: 0rem;
+    margin-bottom: 14rem;
+  }
 }
 .article__top {
   display: flex;
@@ -340,6 +354,7 @@ line-height: normal;
   font-weight: 500;
   line-height: normal;
 }
+
 .article__bottom {
   display: flex;
   gap: 2rem;
@@ -347,8 +362,18 @@ line-height: normal;
   font-family: "Quicksand-regular";
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .article__bottom {
+    flex-direction: column;
+  }
+}
 .bottom__img {
   width: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .bottom__img {
+    width: 65%;
+  }
 }
 .article__bottom-content {
   width: 70%;
@@ -357,6 +382,11 @@ line-height: normal;
   justify-content: flex-start;
   gap: 2rem;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .article__bottom-content {
+    width: 100%;
+  }
 }
 .bottom__title {
   color: var(--text-color-secondary);
@@ -375,5 +405,8 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.0875rem;
+
+  text-align: center;
+  font-family: Quicksand-light;
+  letter-spacing: 0.01288rem;
 }

@@ -88,11 +88,6 @@ body {
   background-color: var(--color-grey-dark);
   transition: background-color 0.5s ease;
 }
-main {
-  /* padding-top: 6rem;
-  text-align: center;
-  min-height: 100vh; */
-}
 
 @media screen and (max-width: 1200px){
   .body {
