@@ -1,10 +1,12 @@
 "use strict";
 
+//CONSTANTS
 const hamburgerMenu = document.querySelector(".hamburger__menu-toggle");
 const darkmodeBtn = document.querySelector(".aside__darkmodebutton");
 const darkmodeImg = document.querySelector(".darkmode__icon");
 const body = document.querySelector("body");
 
+//HAMBURGER MENU
 hamburgerMenu.addEventListener("click", () => {
   let visible = document
     .querySelector(".nav")
@@ -12,11 +14,15 @@ hamburgerMenu.addEventListener("click", () => {
   // console.log(visible);
   if (visible) {
     hamburgerMenu.src = "./svg/X-brown_Vector.svg";
+    hamburgerMenu.classList.add("hamburger__X-absolute");
   } else {
     hamburgerMenu.src = "./svg/Hamburger_Vector.svg";
+    hamburgerMenu.classList.remove("hamburger__X-absolute");
   }
 });
 
+
+//DARKMODE
 darkmodeBtn.addEventListener("click", () => {
   let moonVisible = darkmodeImg.classList.contains("moon");
   if (moonVisible) {

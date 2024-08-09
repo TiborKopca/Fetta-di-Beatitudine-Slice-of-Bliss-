@@ -64,7 +64,8 @@
   --color-grey-light: #CCD5AF;
   --color-grey-dark: #9ea588;
 
-  --bg-color-header: rgba(237, 167, 46, 80%);--bg-color-footer: rgba(237, 167, 46, 95%);
+  --bg-color-header: rgba(237, 167, 46, 95%);
+  --bg-color-footer: rgba(237, 167, 46, 95%);
 }
 html {
   font-family: var(--font-Quicksand-local-light);

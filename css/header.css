@@ -89,8 +89,26 @@
   visibility: hidden;
 }
 
-
-
+.aside__darkmodebutton {
+  position: absolute;
+  top: 11rem;
+  right: 0rem;
+  /* background: var(--color-grey-light); */
+  padding: 1rem;
+  border: 1px solid var(--text-color-secondary);
+  border-radius: 9px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .aside__darkmodebutton {
+    position: static;
+    width: 5rem;
+    margin: 0 auto;
+  }
+}
+.darkmode__icon{
+  width: 100%
+}
 
 @media screen and (max-width: 1200px){
   .nav{
@@ -127,6 +145,10 @@
     /* top: 1rem; */
     right: 2rem;
     cursor: pointer;
+  }
+  .hamburger__X-absolute{
+    position:absolute;
+    top: 1rem;
   }
   .nav__links{
     flex-direction: column;

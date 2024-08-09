@@ -1,0 +1,31 @@
+.main {
+  width: 100svw;
+  /* height: 100svh; */
+  padding-top: 0;
+  font-family: "Quicksand-medium";
+  text-align: center;
+}
+.hero__img {
+  width: 100svw;
+  height: 100svh;
+  background: url("../img/avif/about_mobile.avif") lightgray 50% / cover
+    no-repeat;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__img {
+    /* width: 100svw; */
+    /* height: auto; */
+    background-image: url("../img/avif/about_desktop.avif");
+    /* background-position: top center; */
+    /* justify-content: center; */
+  }
+}
+
+

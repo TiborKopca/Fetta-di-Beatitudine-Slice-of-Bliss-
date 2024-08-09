@@ -45,64 +45,158 @@
     <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
     <!-- links de estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/about.css" />
 
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <!-- <script src="preloader.js"></script> -->
+    <script src="./js/menu.js" defer></script>
   </head>
 
-  <body>
+  <body class="body grey-light">
     <!-- Include header -->
     <!-- <div data-include="/components/header.html"></div> -->
-    <header>
-      <div class="container">
-        <h1>Pizzeria</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="specials.html">Specials</a></li>
-            <li><a href="order.html">Order Online</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+    <header class="header" id="header">
+      <section class="header__container">
+        
+        <a href="./home.html" class="logo"
+          ><img class="logo__img" 
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+        /></a>
+
+
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="links__item">
+              <a href="home.html" class="nav__item">Home</a>
+            </li>
+            <li class="links__item">
+              <a href="about.html" class="nav__item link__active">About</a>
+            </li>
+            <li class="links__item">
+              <a href="menu.html" class="nav__item">Menu</a>
+            </li>
+            <li class="links__item">
+              <a href="discounts.html" class="nav__item">Discounts</a>
+            </li>
+            <li class="links__item">
+              <a href="order.html" class="nav__item">ORDER</a>
+            </li>
+            <li class="links__item">
+              <a href="reservation.html" class="nav__item">Reservation</a>
+            </li>
+            <li class="links__item">
+              <a href="ingredients.html" class="nav__item">Ingredients</a>
+            </li>
+            <li class="links__item">
+              <div class="aside__darkmodebutton grey-light"><img src="./svg/Moon_Vector.svg" alt="" class="darkmode__icon moon"></div>
+
+            </li>
           </ul>
         </nav>
-      </div>
+        <!-- MENU RESPONSIVE(hamburger) -->
+        <img
+          src="./svg/Hamburger_Vector.svg"
+          alt="hamburger menu"
+          class="hamburger__menu-toggle"
+          id="hamburger__menu-toggle"
+        />
+      </section>
     </header>
-    <!-- <div id="container"> -->
 
-      <main>
-        <div class="container">
-            <section class="about">
-                <h2>Our History</h2>
-                <p>A brief history of the pizzeria.</p>
+    <main class="main" id="main">
+      <div class="hero__img">
 
-                <h2>Our Team</h2>
-                <p>Information about the founder and key staff members.</p>
+        <section class="title__container">
+          <h1 class="title">Welcome to Fetta di Beatitudine</h1>
+          <article class="subtitle">
+            <p class="subtitle__text">where every bite of our artisan pizza is a journey to bliss.</p><p class="subtitle__text">Crafted
+            with love, fresh ingredients, and an Italian touch, we invite you to
+            savor the happiness in every slice.</p><p class="subtitle__text">Buon Appetito!"</p>
+          </article>
 
-                <h2>Our Philosophy</h2>
-                <p>The pizzeria’s philosophy or mission statement.</p>
+       
+      </div>
 
-                <h2>Awards</h2>
-                <p>Awards and recognitions.</p>
-            </section>
-        </div>
+
     </main>
-    
+
+
+
+
+
+
+
+
+
+
+
     <!-- Include footer -->
     <!-- <div data-include="footer.html"></div> -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="./index.html" class="footer__logo"
+          ><img
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+            class="logo__img"
+        /></a>
+        <section class="footer__content">
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a href="./privacypolicy.html" class="link__technical"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__link">
+              <a href="./legal.html" class="link__technical">Legal Notice</a>
+            </li>
+            <li class="footer__link">
+              <a href="./terms.html" class="link__technical"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer__social">
+            <a
+              href="https://www.instagram.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img
+                src="./svg/Instagram_Vector.svg"
+                srcset=""
+                alt="instagram" /></a
+            ><a
+              href="https://www.facebook.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Facebook_Vector.svg" srcset="" alt="facebook"
+            /></a>
+            <a
+              href="https://www.twitter.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/X-Twitter_Vector.svg" srcset="" alt="instagram"
+            /></a>
+            <a
+              href="https://www.pinterest.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Pinterest_Vector.svg" srcset="" alt="youtube"
+            /></a>
+          </div>
+        </section>
+        <p class="footer__copyright">&copy; 2024 FETTA DI BEATITUDINE</p>
       </div>
     </footer>
+
+    <!-- <script src="/js/loadComponents.js"></script> -->
   </body>
 </html>
