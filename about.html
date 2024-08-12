@@ -20,7 +20,6 @@
     />
     <title>About Us - Pizzeria</title>
 
-
     <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
     <meta property="og:title" content="Título de tu página" />
     <meta property="og:description" content="Descripción de tu página" />
@@ -64,14 +63,13 @@
 
     <header class="header" id="header">
       <section class="header__container">
-        
         <a href="./home.html" class="logo"
-          ><img class="logo__img" 
+          ><img
+            class="logo__img"
             src="./img/logo/png/logo-no-background.png"
             srcset=""
             alt="logo pizzeria"
         /></a>
-
 
         <nav class="nav">
           <ul class="nav__links">
@@ -97,8 +95,13 @@
               <a href="ingredients.html" class="nav__item">Ingredients</a>
             </li>
             <li class="links__item">
-              <div class="aside__darkmodebutton grey-light"><img src="./svg/Moon_Vector.svg" alt="" class="darkmode__icon moon"></div>
-
+              <div class="aside__darkmodebutton grey-light">
+                <img
+                  src="./svg/Moon_Vector.svg"
+                  alt=""
+                  class="darkmode__icon moon"
+                />
+              </div>
             </li>
           </ul>
         </nav>
@@ -114,30 +117,86 @@
 
     <main class="main" id="main">
       <div class="hero__img">
-
         <section class="title__container">
-          <h1 class="title">Welcome to Fetta di Beatitudine</h1>
+          <h1 class="title">About us</h1>
           <article class="subtitle">
-            <p class="subtitle__text">where every bite of our artisan pizza is a journey to bliss.</p><p class="subtitle__text">Crafted
-            with love, fresh ingredients, and an Italian touch, we invite you to
-            savor the happiness in every slice.</p><p class="subtitle__text">Buon Appetito!"</p>
+            <h2 class="subtitle__title">Our story</h2>
+            <p class="subtitle__text">
+              At Fetta di Beatitudine, our journey began with a passion for
+              creating the perfect pizza.
+            </p>
+            <p class="subtitle__text">
+              Founded by Tiburogio Kopssi in 2010, our pizzeria was built on the
+              belief that every pizza should be a masterpiece, a true slice of
+              bliss.
+            </p>
+            <p class="subtitle__text">
+              From humble beginnings, we have grown into a beloved pizzeria
+              known for our commitment to quality, tradition, and exceptional
+              taste.
+            </p>
           </article>
-
-       
+          <article class="about__list">
+            <ul class="list__technologies">
+              <li class="list__technlology">Handcrafted Dough</li>
+              <li class="list__technlology">Homemade Sauce</li>
+              <li class="list__technlology">Fresh, Premium Ingredients</li>
+              <li class="list__technlology">Perfect Assembly</li>
+              <li class="list__technlology">Stone Oven Baking</li>
+            </ul>
+          </article>
+        </section>
       </div>
+
+      <section class="card__aboutus">
+        <article class="article__top">
+          <h3 class="top__title">The Art of Pizza Making at Fetta di Beatitudine</h3>
+          <p class="top__text">
+            
+          </p>
+        </article>
+        <article class="article__bottom">
+          <img
+            src="./img/avif/about_horno-desktop-mobile.avif"
+            alt="pizza salami and pepperoni"
+            class="bottom__img"
+          />
+          <article class="article__bottom-content">
+            
+            <!-- <h3 class="bottom__title">Salami and Pepperoni</h3> -->
+            <p class="bottom__text">
+              At Fetta di Beatitudine, we believe that every pizza should be a masterpiece, a true slice of bliss. Our process combines traditional Italian techniques with a passion for quality, ensuring that every bite you take is a journey to culinary heaven.
+            </p>
+          </article>
+        </article>
+      </section>
+
+      <section class="fixedimg__container">
+        <div class="fixedimg1" alt="interior of pizzeria"></div>
+        <div class="fixedimg2" alt="exterior of pizzeria"></div>
+      </section>
+
+      <section class="location__information">
+        <article class="location__title">Location</article>
+        <article class="location__subtitle">
+          <p class="location__subtitle-text">Fetta di Beatitudine - Palma Centre</p>
+          <ul class="location__list">
+            <li class="location__list-item">Address: Calle Di Bufalla, Palma</li>
+            <li class="location__list-item">Phone: (+34) 456 789 032</li>
+            <li class="location__list-item">Hours: Monday-Sunday, 11 AM - 10 PM</li>
+          </ul>
+          <button class="location__btn-reserve" onclick="location.href='discounts.html'">
+            Reserve a table!
+          </button>
+        </article>
+
+        <article class="google__maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4950.467880651556!2d2.6486634740299584!3d39.57573102969009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793f6ed205391%3A0xd798928555313c1d!2sSanta%20Chiara%20Pizza%20Napoletana%20Contemporanea!5e0!3m2!1sen!2ses!4v1723217326080!5m2!1sen!2ses" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+      </section>
 
 
     </main>
-
-
-
-
-
-
-
-
-
-
 
     <!-- Include footer -->
     <!-- <div data-include="footer.html"></div> -->

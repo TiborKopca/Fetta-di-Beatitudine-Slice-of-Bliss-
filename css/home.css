@@ -109,21 +109,6 @@
     /* margin-bottom: 0rem; */
   }
 }
-.aside__darkmodebutton {
-  position: absolute;
-  top: 11rem;
-  right: 0rem;
-  /* background: var(--color-grey-light); */
-  padding: 1rem;
-  border: 1px solid var(--text-color-secondary);
-  border-radius: 9px;
-  cursor: pointer;
-}
-@media screen and (max-width: 1200px) {
-  .aside__darkmodebutton {
-    display: none;
-  }
-}
 .aside__discount {
   display: inline-flex;
   padding: 1.5rem 2rem;
@@ -264,6 +249,8 @@
     font-size: 2rem;
   }
 }
+
+/* FIXED IMAGE */
 .fixedimg {
   background-image: url(../img/avif/home-table_desktop.avif);
   background-size: cover;
@@ -277,9 +264,7 @@
     background-image: url(../img/avif/home-table_mobile.avif);
   }
 }
-/* .fixedimg__img{
-    width: 100%;
-} */
+
 .pizzeriainfo {
   width: 80%;
   margin: 14rem auto;
@@ -319,6 +304,8 @@
     text-align: left;
   }
 }
+
+/* SIGNATURE PIZZA MODULE */
 .signaturepizza {
   width: 80%;
   margin: 4.5rem auto;
