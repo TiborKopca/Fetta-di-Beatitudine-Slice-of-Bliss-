@@ -404,7 +404,7 @@ letter-spacing: 0.12063rem;
     width: 100%;
     padding: 0;
     flex-direction: column;
-    padding: 4rem;
+    padding: 2rem;
   }
   
 }
@@ -414,6 +414,12 @@ letter-spacing: 0.12063rem;
   border: 2px solid var(--color-green);
   padding: 4rem;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .form__right {
+    padding: 2rem;
+  }
+  
 }
 .form__label {
   font-size: 1.5rem;
@@ -460,6 +466,13 @@ letter-spacing: 0.15519rem;
   flex: 0 0 100%;
   padding: 4rem;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1200px) {
+  .form__bottom {
+    padding: 2rem;
+    gap: 4rem;
+  }
+  
 }
 
 .pizza__selection{
