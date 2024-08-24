@@ -42,7 +42,7 @@
 @media screen and (max-width: 1200px) {
   .title__container {
     width: 100%;
-    padding: 7rem 0rem;
+    padding: 3rem 0rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -217,7 +217,7 @@
   margin: 6rem 0rem;
 }
 @media screen and (max-width: 1200px) {
-  .phone__title,
+    .reservation__title,
   .form__title {
     font-size: 2rem;
     text-align: left;
@@ -241,7 +241,7 @@
   .reservation__text {
     order: 2;
     padding: 0rem;
-    font-size: 2rem;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 125.175%;
@@ -300,6 +300,7 @@
 @media screen and (max-width: 1200px) {
   .form__subtitle {
     font-size: 1.3rem;
+    padding: 0rem;
   }
   .form__subtitle-smallprint,
   .bottom__info {
@@ -441,7 +442,8 @@ width: 100%;
   }
   @media screen and (max-width: 1200px) {
     .form__confirmation, .form__cancellation{
-      font-size: 2rem;
+      font-size: 1.3rem;
+      padding: 1.3rem 0rem;
     }
   }
 .cancellation__text, .confirmation__text{
@@ -452,6 +454,11 @@ line-height: 125.175%; /* 1.95588rem */
 letter-spacing: 0.10938rem;
 text-align: left;
 }
+@media screen and (max-width: 1200px) {
+    .cancellation__text, .confirmation__text{
+      font-size: 1rem;
+    }
+  }
 
 
 
