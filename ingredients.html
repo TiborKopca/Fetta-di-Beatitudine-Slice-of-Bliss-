@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Authentic Pizza Crafted with the Finest Ingredients - Pizzeria
+    </title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Check out our current specials, seasonal menus, and special events at the pizzeria.">
-    <meta name="keywords" content="specials, promotions, seasonal menu, events">
-    <meta property="og:title" content="Specials - Pizzeria">
-    <meta property="og:description" content="Discover our current specials, seasonal menus, and upcoming special events.">
-    <meta property="og:image" content="images/specials.jpg">
-    <meta property="og:url" content="https://www.yourpizzeriawebsite.com/specials.html">
-    
-    <title>Specials - Pizzeria</title>
+    <!-- Additional Meta Tags -->
+    <meta
+      name="keywords"
+      content="Fetta di Beatitudine, pizza, Italian pizza, fresh ingredients, pizza making process, artisanal pizza, authentic pizza, traditional pizza, pizzeria, best pizza ingredients"
+    />
+    <meta name="author" content="Fetta di Beatitudine Pizzeria" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-    <meta property="og:title" content="Título de tu página" />
-    <meta property="og:description" content="Descripción de tu página" />
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Fetta di Beatitudine - Authentic Pizza Crafted with the Finest Ingredients"
+    />
+    <meta
+      property="og:description"
+      content="Experience the art of pizza making with Fetta di Beatitudine. We use the highest quality ingredients and traditional methods to create mouthwatering pizzas."
+    />
     <meta
       property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
+      content="https://www.fettadibeatitudine.com/images/og-image.jpg"
     />
-    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:url" content="https://www.fettadibeatitudine.com" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Título de tu página" />
-    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:title"
+      content="Fetta di Beatitudine - Authentic Pizza Crafted with the Finest Ingredients"
+    />
+    <meta
+      name="twitter:description"
+      content="Join us at Fetta di Beatitudine, where we create delicious pizzas using the freshest ingredients and time-honored techniques."
+    />
     <meta
       name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
+      content="https://www.fettadibeatitudine.com/images/twitter-image.jpg"
     />
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
@@ -37,67 +54,342 @@
     <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
     <!-- links de estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/ingredients.css" />
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <!-- <script src="preloader.js"></script> -->
+    <script src="./js/menu.js" defer></script>
   </head>
 
-  <body>
+  <body class="body grey-light">
     <!-- Include header -->
     <!-- <div data-include="/components/header.html"></div> -->
-    <header>
-      <div class="container">
-          <h1>Pizzeria</h1>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="menu.html">Menu</a></li>
-                  <li><a href="specials.html">Specials</a></li>
-                  <li><a href="order.html">Order Online</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="reviews.html">Reviews</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </nav>
+
+    <header class="header" id="header">
+      <section class="header__container">
+        <a href="./home.html" class="logo"
+          ><img
+            class="logo__img"
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="links__item">
+              <a href="home.html" class="nav__item">Home</a>
+            </li>
+            <li class="links__item">
+              <a href="about.html" class="nav__item">About</a>
+            </li>
+            <li class="links__item">
+              <a href="menu.html" class="nav__item">Menu</a>
+            </li>
+            <li class="links__item">
+              <a href="discounts.html" class="nav__item">Discounts</a>
+            </li>
+            <li class="links__item">
+              <a href="order.html" class="nav__item">ORDER</a>
+            </li>
+            <li class="links__item">
+              <a href="reservation.html" class="nav__item">Reservation</a>
+            </li>
+            <li class="links__item">
+              <a href="ingredients.html" class="nav__item link__active"
+                >Ingredients</a
+              >
+            </li>
+            <li class="links__item">
+              <div class="aside__darkmodebutton grey-light">
+                <img
+                  src="./svg/Moon_Vector.svg"
+                  alt=""
+                  class="darkmode__icon moon"
+                />
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- MENU RESPONSIVE(hamburger) -->
+        <img
+          src="./svg/Hamburger_Vector.svg"
+          alt="hamburger menu"
+          class="hamburger__menu-toggle"
+          id="hamburger__menu-toggle"
+        />
+      </section>
+    </header>
+
+    <main class="main" id="main">
+      <div class="hero__img">
+        <section class="title__container">
+          <h1 class="title">Our Pizza Making Process and Ingredients</h1>
+        </section>
       </div>
-  </header>
-    <!-- <div id="container"> -->
 
+      <!-- ABOUT US -->
+      <section class="card__aboutus">
+        <article class="article__top">
+          <h3 class="top__title">
+            The Art of Pizza Making at Fetta di Beatitudine
+          </h3>
+          <p class="top__text"></p>
+        </article>
+        <article class="article__bottom">
+          <img
+            src="./img/avif/about_horno-desktop-mobile.avif"
+            alt="pizza salami and pepperoni"
+            class="bottom__img"
+          />
+          <article class="article__bottom-content">
+            <!-- <h3 class="bottom__title">Salami and Pepperoni</h3> -->
+            <p class="bottom__text">
+              At Fetta di Beatitudine, we believe that every pizza should be a
+              masterpiece, a true slice of bliss. Our process combines
+              traditional Italian techniques with a passion for quality,
+              ensuring that every bite you take is a journey to culinary heaven.
+            </p>
+          </article>
+        </article>
+      </section>
 
-      <main>
-        <div class="container">
-            <section class="specials">
-                <h2>Current Specials</h2>
-                <p>Details and images of current specials and limited-time offers.</p>
+      <!-- PIZZA PROCESS -->
+      <section class="card__aboutus">
+        <article class="article__top">
+          <h3 class="top__title">Our Pizza Making Process</h3>
+          <p class="top__subtitle">
+            Here's a glimpse into our pizza-making process and the premium
+            ingredients we use
+          </p>
+        </article>
 
-                <h2>Upcoming Seasonal Menus</h2>
-                <p>Details and images of upcoming seasonal or holiday menus.</p>
+        <article class="article__top">
+          <p class="process__paragraph">
+            <span class="process__bold">Handcrafted Dough:</span>The foundation
+            of a great pizza is its dough. We start with the finest Italian
+            flour, which is carefully selected for its perfect balance of
+            strength and elasticity. Our dough is handmade daily, using a
+            time-honored recipe that includes a slow fermentation process. This
+            not only enhances the flavor but also ensures a light and airy crust
+            with a perfect chew.
+          </p>
 
-                <h2>Special Events</h2>
-                <p>Details and images of special events (e.g., Pizza-making classes).</p>
+          <p class="process__paragraph">
+            <span class="process__bold">Homemade Sauce:</span>
+            Our pizza sauce is made from scratch using ripe, juicy tomatoes,
+            harvested at their peak. We blend them with a mix of fresh herbs and
+            spices to create a rich and flavorful base. The secret to our sauce
+            lies in its simplicity—no artificial additives, just pure, natural
+            goodness.
+          </p>
 
-                <div id="countdown"></div>
-            </section>
-        </div>
+          <p class="process__paragraph">
+            <span class="process__bold">Fresh, Premium Ingredients:</span>
+            We believe that the best pizzas start with the best ingredients.
+            That's why we source our toppings from local farms and trusted
+            suppliers. From farm-fresh vegetables to artisanal cheeses and
+            top-quality meats, every ingredient is selected for its superior
+            taste and texture.
+          </p>
+          <img
+            src="./img/avif/ingredients-desktop-hands.avif"
+            alt="pizza salami and pepperoni"
+            class="bottom__img"
+          />
+        </article>
+
+        <article class="article__bottom">
+          <img
+            src="./img/avif/ingredients-desktop-hands2.avif"
+            alt="pizza salami and pepperoni"
+            class="bottom__img"
+          />
+          <p class="process__paragraph">
+            <span class="process__bold">Perfect Assembly:</span>
+            Each Pizza is meticulously assembled to ensure a harmonious balance
+            of flavors in every bite. We start with a generous layer of our
+            homemade sauce, followed by a sprinkling of premium cheese, and
+            finish with your choice of fresh toppings. Our skilled pizzaiolos
+            (pizza makers) take great care to distribute the toppings evenly, so
+            every slice is a delightful experience.
+          </p>
+
+          <p class="process__paragraph">
+            <span class="process__bold">Stone Oven Baking:</span>
+            The magic happens in our stone ovens, where each pizza is baked to
+            perfection. The high temperatures of the stone oven ensure a crispy,
+            golden crust while keeping the toppings juicy and flavorful. This
+            traditional method of baking brings out the best in each ingredient,
+            creating a pizza that's both crispy and tender.
+          </p>
+        </article>
+      </section>
+
+      <!-- INGREDIENTS -->
+      <section class="card__aboutus">
+        <article class="article__top">
+          <h3 class="top__title">Our Ingredients</h3>
+        </article>
+
+        <article class="article__top">
+          <div class="ingredients__container-style1">
+            <p class="process__paragraph">
+              <span class="process__bold">Italian Flour: </span>Our dough is
+              made using the finest Italian flour, known for its superior
+              quality and perfect texture. This flour is the key to our dough’s
+              light and airy structure, providing a delicious base for our
+              pizzas.
+            </p>
+            <img
+              src="./img/avif/ingredients-desktop-flour.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+          </div>
+
+          <div class="ingredients__container-style2">
+            <img
+              src="./img/avif/ingredients-desktop-tomatoes.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+
+            <p class="process__paragraph">
+              <span class="process__bold">Fresh Tomatoes: </span>
+              Only the ripest, juiciest tomatoes make it into our sauce. These
+              tomatoes are packed with flavor and provide a natural sweetness
+              that perfectly complements the other ingredients.
+            </p>
+          </div>
+
+          <div class="ingredients__container-style1">
+            <p class="process__paragraph">
+              <span class="process__bold">Artisanal Cheese: </span>
+              We use a variety of artisanal cheeses, including creamy
+              mozzarella, tangy gorgonzola, and rich parmesan. Each cheese is
+              chosen for its exceptional taste and melting qualities, ensuring
+              every pizza is cheesy and delicious.
+            </p>
+            <img
+              src="./img/avif/ingredients-desktop-cheese.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+          </div>
+
+          <div class="ingredients__container-style2">
+            <img
+              src="./img/avif/ingredients-desktop-vegetables.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+
+            <p class="process__paragraph">
+              <span class="process__bold">Local and Organic Produce:</span>
+              Our vegetables are sourced from local farms that practice organic
+              farming methods. From crisp bell peppers to earthy mushrooms and
+              spicy arugula, our produce is always fresh and bursting with
+              flavor.
+            </p>
+          </div>
+
+          <div class="ingredients__container-style1">
+            <p class="process__paragraph">
+              <span class="process__bold">Premium Meats:</span>
+              For our meat lovers, we offer a selection of premium meats,
+              including savory pepperoni, spicy Italian sausage, and tender
+              prosciutto. Each meat is carefully selected for its quality and
+              taste, adding a rich and satisfying element to our pizzas.
+            </p>
+            <img
+              src="./img/avif/ingredients-desktop-premiummeat.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+          </div>
+
+          <div class="ingredients__container-style2">
+            <img
+              src="./img/avif/ingredients-desktop-HerbsSpices.avif"
+              alt="pizza salami and pepperoni"
+              class="bottom__img"
+            />
+
+            <p class="process__paragraph">
+              <span class="process__bold">Fresh Herbs and Spices: </span>
+              We use a blend of fresh herbs and spices to enhance the flavor of
+              our pizzas. Basil, oregano, garlic, and rosemary are just a few of
+              the ingredients that add depth and complexity to our dishes.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
     <!-- Include footer -->
     <!-- <div data-include="footer.html"></div> -->
-    <footer>
-      <div class="container">
-          <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <a href="./index.html" class="footer__logo"
+          ><img
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+            class="logo__img"
+        /></a>
+        <section class="footer__content">
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a href="./privacypolicy.html" class="link__technical"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__link">
+              <a href="./legal.html" class="link__technical">Legal Notice</a>
+            </li>
+            <li class="footer__link">
+              <a href="./terms.html" class="link__technical"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer__social">
+            <a
+              href="https://www.instagram.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img
+                src="./svg/Instagram_Vector.svg"
+                srcset=""
+                alt="instagram" /></a
+            ><a
+              href="https://www.facebook.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Facebook_Vector.svg" srcset="" alt="facebook"
+            /></a>
+            <a
+              href="https://www.twitter.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/X-Twitter_Vector.svg" srcset="" alt="instagram"
+            /></a>
+            <a
+              href="https://www.pinterest.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Pinterest_Vector.svg" srcset="" alt="youtube"
+            /></a>
+          </div>
+        </section>
+        <p class="footer__copyright">&copy; 2024 FETTA DI BEATITUDINE</p>
       </div>
-  </footer>
-</body>
+    </footer>
 
-
-
+    <!-- <script src="/js/loadComponents.js"></script> -->
+  </body>
 </html>

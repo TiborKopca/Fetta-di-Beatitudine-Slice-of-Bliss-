@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Pizzeria! Enjoy our delicious pizzas and discover our special events and promotions.">
-    <meta name="keywords" content="pizzeria, pizza, specials, events">
-    <meta property="og:title" content="Home - Pizzeria">
-    <meta property="og:description" content="Welcome to Pizzeria! Discover our delicious pizzas, special offers, and upcoming events.">
-    <meta property="og:image" content="images/home-hero.jpg">
-    <meta property="og:url" content="https://www.yourpizzeriawebsite.com">
+    <title>Legal Notice - Fetta di Beatitudine Pizzeria</title>
+    <meta name="description" content="Read the legal notice for Fetta di Beatitudine, outlining the terms and conditions, privacy policy, and legal obligations related to our pizzeria.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Legal Notice - Fetta di Beatitudine Pizzeria">
+    <meta property="og:description" content="Discover the legal notice of Fetta di Beatitudine, including information on terms of service, privacy policy, and other legal disclaimers.">
+    <meta property="og:image" content="https://www.fettadibeatitudine.com/images/legal-og-image.jpg">
+    <meta property="og:url" content="https://www.fettadibeatitudine.com/legal-notice">
+    <meta property="og:type" content="website">
 
-    <title>Pizzeria - Home</title>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legal Notice - Fetta di Beatitudine Pizzeria">
+    <meta name="twitter:description" content="Visit our legal notice page to understand the legal frameworks governing Fetta di Beatitudine, including terms and conditions and privacy policies.">
+    <meta name="twitter:image" content="https://www.fettadibeatitudine.com/images/legal-twitter-image.jpg">
 
-    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-    <meta property="og:title" content="Título de tu página" />
-    <meta property="og:description" content="Descripción de tu página" />
-    <meta
-      property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
-    />
-    <meta property="og:url" content="URL de tu página" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Título de tu página" />
-    <meta name="twitter:description" content="Descripción de tu página" />
-    <meta
-      name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
-    />
+    <!-- Additional Meta Tags -->
+    <meta name="keywords" content="Fetta di Beatitudine, legal notice, terms and conditions, privacy policy, legal information, pizzeria, legal obligations, disclaimer">
+    <meta name="author" content="Fetta di Beatitudine Pizzeria">
+    <meta name="robots" content="noindex, follow">
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
@@ -37,60 +31,227 @@
     <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
     <!-- links de estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/legal.css" />
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <!-- <script src="preloader.js"></script> -->
+    <script src="./js/menu.js" defer></script>
   </head>
 
-  <body>
+  <body class="body grey-light">
     <!-- Include header -->
     <!-- <div data-include="/components/header.html"></div> -->
-    <header>
-      <div class="container">
-          <h1>Pizzeria</h1>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="menu.html">Menu</a></li>
-                  <li><a href="specials.html">Specials</a></li>
-                  <li><a href="order.html">Order Online</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="reviews.html">Reviews</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </nav>
+
+    <header class="header" id="header">
+      <section class="header__container">
+        <a href="./home.html" class="logo"
+          ><img
+            class="logo__img"
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="links__item">
+              <a href="home.html" class="nav__item link__active">Home</a>
+            </li>
+            <li class="links__item">
+              <a href="about.html" class="nav__item">About</a>
+            </li>
+            <li class="links__item">
+              <a href="menu.html" class="nav__item">Menu</a>
+            </li>
+            <li class="links__item">
+              <a href="discounts.html" class="nav__item">Discounts</a>
+            </li>
+            <li class="links__item">
+              <a href="order.html" class="nav__item">ORDER</a>
+            </li>
+            <li class="links__item">
+              <a href="reservation.html" class="nav__item">Reservation</a>
+            </li>
+            <li class="links__item">
+              <a href="ingredients.html" class="nav__item">Ingredients</a>
+            </li>
+            <li class="links__item">
+              <div class="aside__darkmodebutton grey-light">
+                <img
+                  src="./svg/Moon_Vector.svg"
+                  alt=""
+                  class="darkmode__icon moon"
+                />
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- MENU RESPONSIVE(hamburger) -->
+        <img
+          src="./svg/Hamburger_Vector.svg"
+          alt="hamburger menu"
+          class="hamburger__menu-toggle"
+          id="hamburger__menu-toggle"
+        />
+      </section>
+    </header>
+
+    <main class="main" id="main">
+      <div class="hero__img">
+
+
+        <section class="title__container">
+          <h1 class="title">Welcome to Fetta di Beatitudine</h1>
+          <article class="subtitle">
+            <p class="subtitle__text">where every bite of our artisan pizza is a journey to bliss.</p><p class="subtitle__text">Crafted
+            with love, fresh ingredients, and an Italian touch, we invite you to
+            savor the happiness in every slice.</p><p class="subtitle__text">Buon Appetito!"</p>
+          </article>
+
+        </section>
+        <section class="aside">
+          
+          <button class="aside__discount" onclick="location.href='discounts.html'">
+            Reserve a table!
+          </button>
+          <article class="aside__openinghours">
+            <p class="openinghours__title">Open every day from
+              15:00 - 24:00</p>
+            <p class="openinghours__phone">+34 999 556 775</p>
+          </article>
+        </section>
       </div>
-  </header>
-    <!-- <div id="container"> -->
 
+      <section class="promotion">
+        <article class="promotion__left">
+          <h2 class="promotion__title">Special Offers : Opening PROMOTION!</h2>
+          <p class="promotion__text">
+            Our very special first discount 50%, only during first week of the
+            aperture
+          </p>
+        </article>
+        <article class="promotion__right">
+          <button class="discount" onclick="location.href='discounts.html'">
+            Get the discount
+          </button>
+        </article>
+        <img
+          src="./svg/game-icons_full-pizza.svg"
+          alt="pizza"
+          class="promotion__img"
+        />
+      </section>
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <img src="images/pizzeria.jpg" alt="Pizzeria Interior">
-                <p>Welcome to our Pizzeria! Join us for our next special event:</p>
-                <div id="countdown"></div>
-            </section>
-        </div>
+      <section class="fixedimg">
+        <!-- <img
+          src="./img/avif/home-table_desktop.avif"
+          alt="table with pizzas"
+          class="fixedimg__img"
+        /> -->
+      </section>
+
+      <section class="pizzeriainfo">
+        <h2 class="pizzeriainfo__title">Fetta di Beatitudine</h2>
+        <p class="pizzeriainfo__text">
+          At Fetta di Beatitudine, we believe in the magic of a perfect pizza.
+          Join us and discover the bliss in every slice, made with fresh
+          ingredients and Italian tradition.
+        </p>
+      </section>
+
+      <section class="signaturepizza">
+        <article class="article__top">
+          <h3 class="top__title">Singature Pizzas</h3>
+          <p class="top__text">
+            Showcase a few of our most popular or unique pizzas with images and
+            descriptions.
+          </p>
+        </article>
+        <article class="article__bottom">
+          <img
+            src="./img/avif/pizza-salami&pepperoni1920x1920.avif"
+            alt="pizza salami and pepperoni"
+            class="bottom__img"
+          />
+          <article class="article__bottom-content">
+            
+            <h3 class="bottom__title">Salami and Pepperoni</h3>
+            <p class="bottom__text">
+              Featuring a generous layer of our homemade tomato sauce, this pizza
+              is topped with thin slices of rich, savory salami and spicy
+              pepperoni. Each bite delivers a perfect balance of meaty goodness
+              and a hint of heat, all atop our handcrafted, perfectly baked crust.
+              Finished with a blend of premium mozzarella and a sprinkle of fresh
+              herbs, it is a delightful treat for any pizza lover.
+            </p>
+          </article>
+        </article>
+      </section>
     </main>
 
     <!-- Include footer -->
     <!-- <div data-include="footer.html"></div> -->
-    <footer>
-      <div class="container">
-          <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="./index.html" class="footer__logo"
+          ><img
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+            class="logo__img"
+        /></a>
+        <section class="footer__content">
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a href="./privacypolicy.html" class="link__technical"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__link">
+              <a href="./legal.html" class="link__technical">Legal Notice</a>
+            </li>
+            <li class="footer__link">
+              <a href="./terms.html" class="link__technical"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer__social">
+            <a
+              href="https://www.instagram.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img
+                src="./svg/Instagram_Vector.svg"
+                srcset=""
+                alt="instagram" /></a
+            ><a
+              href="https://www.facebook.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Facebook_Vector.svg" srcset="" alt="facebook"
+            /></a>
+            <a
+              href="https://www.twitter.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/X-Twitter_Vector.svg" srcset="" alt="instagram"
+            /></a>
+            <a
+              href="https://www.pinterest.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Pinterest_Vector.svg" srcset="" alt="youtube"
+            /></a>
+          </div>
+        </section>
+        <p class="footer__copyright">&copy; 2024 FETTA DI BEATITUDINE</p>
       </div>
-  </footer>
-</body>
+    </footer>
 
-
-
+    <!-- <script src="/js/loadComponents.js"></script> -->
+  </body>
 </html>
