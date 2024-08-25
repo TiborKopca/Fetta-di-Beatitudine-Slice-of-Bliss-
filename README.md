@@ -1,6 +1,8 @@
 # Pizzeria Website Project
+### Practice Project for the Pizzeria Website Design, Layout, Typography, and Content, all done in Figma.
 
-## Home Page
+## Description & Functionality
+### Home Page
 **Description**: The main landing page that provides an overview of the pizzeria.
 **Content**:
 - High-quality images of pizzas and the pizzeria.
@@ -8,7 +10,7 @@
 - Links to key sections (Menu, Order Online, Specials, etc.).
 - An embedded countdown timer to the next special event or promotion (e.g., Pizza Friday special deal).
 
-## About Page
+### About Page
 **Description**: A page detailing the history, mission, and values of the pizzeria.
 **Content**:
 - A brief history of the pizzeria.
@@ -16,22 +18,20 @@
 - The pizzeria’s philosophy or mission statement.
 - Awards and recognitions.
 
-## Menu Page
+### Menu Page
 **Description**: A page showcasing the pizzeria’s food and drink offerings.
 **Content**:
 - Categories (Pizzas, Appetizers, Salads, Desserts, Beverages, etc.).
 - Detailed descriptions and images of each dish.
 - Prices for each item.
 
-## Specials Page
-**Description**: A page highlighting special pizzas, promotions, or seasonal menus.
+### Discounts Page
+**Description**: A page highlighting weekly discounts, promotions, and social media giveaways.
 **Content**:
-- Current specials and limited-time offers.
-- Upcoming seasonal or holiday menus.
-- Special events (e.g., Pizza-making classes).
-- Countdown timer to the next special event or promotion.
+- Weekly discounts and promotions.
+- Social media giveaways.
 
-## Order Online Page
+### Order Online Page
 **Description**: A page where customers can place online orders for delivery or pickup.
 **Content**:
 - Online ordering form.
@@ -39,41 +39,32 @@
 - Information about delivery areas and times.
 - Payment options and instructions.
 
-## Events Page
-**Description**: A page detailing upcoming events hosted by the pizzeria.
+### Reservations Page
+**Description**: A page allowing customers to make reservations, such as for a table or a private event.
 **Content**:
-- Calendar of upcoming events (e.g., live music, pizza-making classes).
-- Detailed descriptions of each event.
-- Photos from past events.
-- Countdown timer to the next event.
+- Reservation form.
 
-## Gallery Page
-**Description**: A visual gallery showcasing the pizzeria, food, and events.
+### Ingredients Page
+**Description**: A page detailing the ingredients used in the pizzeria’s dishes.
 **Content**:
-- High-quality images of the interior and exterior of the pizzeria.
-- Photos of signature pizzas and dishes.
-- Event photos.
-- Customer testimonials with photos.
+- List of ingredients and their sources.
+- Information about the pizzeria’s farm-to-table practices.
 
-## Blog Page
-**Description**: A blog with posts related to the pizzeria, food, and culinary experiences.
-**Content**:
-- Articles about the pizzeria’s latest news.
-- Pizza recipes and cooking tips from the chef.
-- Stories about sourcing ingredients.
-- Food and drink pairing suggestions.
+### Privacy Policy Page, Terms of Use Page, and Legal Notice Page
+- Privacy Policy
+- Terms of Use
+- Legal Notice
 
-## Reviews Page
-**Description**: A page displaying customer reviews and testimonials.
-**Content**:
-- Selected positive reviews from customers.
-- Links to external review sites (Yelp, TripAdvisor).
-- Testimonials from regular patrons.
+## Screenshot
+>Final Online Website Screenshot
+![here](./img/screenshots/screenshotHome.png)
 
-## Contact Page
-**Description**: A page with contact information and a contact form.
-**Content**:
-- Address and map showing the pizzeria’s location.
-- Phone number and email address.
-- Operating hours.
-- Contact form for inquiries.
+## Online Link
+[github Pages Link](https://tiborkopca.github.io/Fetta-di-Beatitudine-Slice-of-Bliss-/)
+
+## Authors
+
+- [@TiborKopca](https://github.com/TiborKopca)
+
+
+
