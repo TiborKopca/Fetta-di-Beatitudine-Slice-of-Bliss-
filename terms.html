@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Fetta di Beatitudine Pizzeria</title>
+    <meta
+      name="description"
+      content="Read the privacy policy of Fetta di Beatitudine to understand how we collect, use, and protect your personal information."
+    />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Pizzeria! Enjoy our delicious pizzas and discover our special events and promotions.">
-    <meta name="keywords" content="pizzeria, pizza, specials, events">
-    <meta property="og:title" content="Home - Pizzeria">
-    <meta property="og:description" content="Welcome to Pizzeria! Discover our delicious pizzas, special offers, and upcoming events.">
-    <meta property="og:image" content="images/home-hero.jpg">
-    <meta property="og:url" content="https://www.yourpizzeriawebsite.com">
-
-    <title>Pizzeria - Home</title>
-
-    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-    <meta property="og:title" content="Título de tu página" />
-    <meta property="og:description" content="Descripción de tu página" />
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Privacy Policy - Fetta di Beatitudine Pizzeria"
+    />
+    <meta
+      property="og:description"
+      content="Learn about the privacy practices of Fetta di Beatitudine, including details on data collection, usage, and protection measures."
+    />
     <meta
       property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
+      content="https://www.fettadibeatitudine.com/images/privacy-og-image.jpg"
     />
-    <meta property="og:url" content="URL de tu página" />
+    <meta
+      property="og:url"
+      content="https://www.fettadibeatitudine.com/privacy-policy"
+    />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Título de tu página" />
-    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:title"
+      content="Privacy Policy - Fetta di Beatitudine Pizzeria"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore the privacy policy of Fetta di Beatitudine to understand how your data is managed and protected."
+    />
     <meta
       name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
+      content="https://www.fettadibeatitudine.com/images/privacy-twitter-image.jpg"
     />
+
+    <!-- Additional Meta Tags -->
+    <meta
+      name="keywords"
+      content="Fetta di Beatitudine, privacy policy, data protection, personal information, data usage, privacy practices, pizzeria"
+    />
+    <meta name="author" content="Fetta di Beatitudine Pizzeria" />
+    <meta name="robots" content="noindex, follow" />
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
@@ -37,60 +58,257 @@
     <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
     <!-- links de estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/legal.css" />
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <!-- <script src="preloader.js"></script> -->
+    <script src="./js/menu.js" defer></script>
   </head>
 
-  <body>
+  <body class="body grey-light">
     <!-- Include header -->
     <!-- <div data-include="/components/header.html"></div> -->
-    <header>
-      <div class="container">
-          <h1>Pizzeria</h1>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="menu.html">Menu</a></li>
-                  <li><a href="specials.html">Specials</a></li>
-                  <li><a href="order.html">Order Online</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="reviews.html">Reviews</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </nav>
-      </div>
-  </header>
-    <!-- <div id="container"> -->
+
+    <header class="header" id="header">
+      <section class="header__container">
+        <a href="./home.html" class="logo"
+          ><img
+            class="logo__img"
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="links__item">
+              <a href="home.html" class="nav__item">Home</a>
+            </li>
+            <li class="links__item">
+              <a href="about.html" class="nav__item">About</a>
+            </li>
+            <li class="links__item">
+              <a href="menu.html" class="nav__item">Menu</a>
+            </li>
+            <li class="links__item">
+              <a href="discounts.html" class="nav__item">Discounts</a>
+            </li>
+            <li class="links__item">
+              <a href="order.html" class="nav__item">ORDER</a>
+            </li>
+            <li class="links__item">
+              <a href="reservation.html" class="nav__item">Reservation</a>
+            </li>
+            <li class="links__item">
+              <a href="ingredients.html" class="nav__item">Ingredients</a>
+            </li>
+            <li class="links__item">
+              <div class="aside__darkmodebutton grey-light">
+                <img
+                  src="./svg/Moon_Vector.svg"
+                  alt=""
+                  class="darkmode__icon moon"
+                />
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- MENU RESPONSIVE(hamburger) -->
+        <img
+          src="./svg/Hamburger_Vector.svg"
+          alt="hamburger menu"
+          class="hamburger__menu-toggle"
+          id="hamburger__menu-toggle"
+        />
+      </section>
+    </header>
+
+    <main class="main" id="main">
+      <section class="legal__text">
+        <h4 class="legal__list-title">
+          Terms and Conditions for Fetta di Beatitudine
+        </h4>
+        <p>
+          Welcome to Fetta di Beatitudine! By accessing or using our website and
+          services, you agree to comply with and be bound by the following terms
+          and conditions. Please review them carefully. If you do not agree with
+          any part of these terms and conditions, you should not use our website
+          or services.
+        </p>
+        <ol class="legal__list">
+          <li>
+            Acceptance of Terms
+            <p>
+              By accessing or using our website, you agree to be bound by these
+              terms and conditions, as well as any other guidelines, rules, or
+              policies that may be posted on our website from time to time.
+            </p>
+          </li>
+          <li>
+            Use of Our Website
+            <ul class="subparagraphs__list">
+              <li>
+                Eligibility: You must be at least 18 years old to use our
+                website or make a purchase.
+              </li>
+              <li>
+                Account Security: If you create an account, you are responsible
+                for maintaining the confidentiality of your account and password
+                and for restricting access to your computer. You agree to accept
+                responsibility for all activities that occur under your account
+                or password.
+              </li>
+              <li>
+                Prohibited Conduct: You agree not to use our website for any
+                unlawful purpose or in any way that could harm Fetta di
+                Beatitudine or any third party.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Products and Services
+            <ul class="subparagraphs__list">
+              <li>Menu Items: All menu items and prices are subject to change without notice. We reserve the right to modify or discontinue any product or service at any time.</li>
+              <li>Orders: We strive to ensure that your order is accurately fulfilled. If you encounter any issues with your order, please contact us promptly to resolve the matter.</li>
+            </ul>
+          </li>
+          <li>
+            Payment and Billing
+            <ul class="subparagraphs__list">
+              <li>Payment Methods: We accept various payment methods as indicated on our website. By providing a payment method, you represent and warrant that you are authorized to use the designated payment method and that you authorize us to charge your payment method for the total amount of your order.</li>
+              <li>Billing Information: You agree to provide current, complete, and accurate purchase and account information for all purchases made through our website.</li>
+            </ul>
+          </li>
+          <li>
+            Delivery and Pickup
+            <ul class="subparagraphs__list">
+              <li>Delivery Areas: We deliver to specified areas only. Please check our website for delivery areas and times.</li>
+              <li>Pickup: If you choose pickup, please arrive at the specified time to collect your order.</li>
+            </ul>
+          </li>
+          <li>
+            Cancellations and Refunds
+            <ul class="subparagraphs__list">
+              <li>Cancellations: Orders can be canceled before they are prepared. Please contact us as soon as possible if you need to cancel your order.</li>
+              <li>Refunds: Refunds will be processed at our discretion. If you are unsatisfied with your order, please contact us to discuss your concerns.</li>
+            </ul>
+          </li>
+          <li>
+            Intellectual Property
+            <p>
+              All content on our website, including but not limited to text, images, logos, and graphics, is the property of Fetta di Beatitudine and is protected by copyright and trademark laws. You may not use, reproduce, or distribute any content from our website without our prior written permission.
+            </p>
+          </li>
+          <li>
+            Privacy Policy
+            <p>
+              Your privacy is important to us. Please review our Privacy Policy, which explains how we collect, use, and protect your personal information. By using our website, you consent to the processing of your personal data as described in our Privacy Policy.
+            </p>
+          </li>
+          <li>
+            Limitation of Liability
+            <p>
+              To the fullest extent permitted by law, Fetta di Beatitudine shall not be liable for any direct, indirect, incidental, special, or consequential damages that result from the use of, or the inability to use, our website or services.
+            </p>
+          </li><li>
+            Indemnification
+            <p>
+              You agree to indemnify, defend, and hold harmless Fetta di Beatitudine, its officers, directors, employees, and agents, from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorney's fees, arising out of or in any way connected with your use of our website or services, or your violation of these terms and conditions.
+            </p>
+          </li><li>
+            Governing Law
+            <p>
+              These terms and conditions are governed by and construed in accordance with the laws of Italy. Any disputes arising from these terms and conditions or your use of our website shall be resolved in the courts of Italy.
+            </p>
+          </li><li>
+            Changes to Terms and Conditions
+            <p>
+              We reserve the right to modify these terms and conditions at any time. Any changes will be posted on this page and will take effect immediately upon posting. Your continued use of our website following the posting of changes constitutes your acceptance of such changes.
+            </p>
+          </li><li>
+            Contact Information
+            <p>
+              If you have any questions or concerns about these terms and conditions, please contact us at:
+Fetta di Beatitudine 123 Pizza Street, Flavor Town, Italy Email: info@fettadibeatitudine.com Phone: +123-456-7890
+            </p>
+          </li>
 
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <img src="images/pizzeria.jpg" alt="Pizzeria Interior">
-                <p>Welcome to our Pizzeria! Join us for our next special event:</p>
-                <div id="countdown"></div>
-            </section>
-        </div>
+
+          
+        </ol>
+        <p class="legal__list-thanks">
+          Thank you for visiting Fetta di Beatitudine. Enjoy your slice of
+          bliss!
+        </p>
+      </section>
+
+    
     </main>
 
     <!-- Include footer -->
     <!-- <div data-include="footer.html"></div> -->
-    <footer>
-      <div class="container">
-          <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="./index.html" class="footer__logo"
+          ><img
+            src="./img/logo/png/logo-no-background.png"
+            srcset=""
+            alt="logo pizzeria"
+            class="logo__img"
+        /></a>
+        <section class="footer__content">
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a href="./privacypolicy.html" class="link__technical"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__link">
+              <a href="./legal.html" class="link__technical">Legal Notice</a>
+            </li>
+            <li class="footer__link">
+              <a href="./terms.html" class="link__technical"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer__social">
+            <a
+              href="https://www.instagram.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img
+                src="./svg/Instagram_Vector.svg"
+                srcset=""
+                alt="instagram" /></a
+            ><a
+              href="https://www.facebook.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Facebook_Vector.svg" srcset="" alt="facebook"
+            /></a>
+            <a
+              href="https://www.twitter.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/X-Twitter_Vector.svg" srcset="" alt="instagram"
+            /></a>
+            <a
+              href="https://www.pinterest.com/pizzeria.fettadibeatitudine/"
+              class="social__link"
+              ><img src="./svg/Pinterest_Vector.svg" srcset="" alt="youtube"
+            /></a>
+          </div>
+        </section>
+        <p class="footer__copyright">&copy; 2024 FETTA DI BEATITUDINE</p>
       </div>
-  </footer>
-</body>
+    </footer>
 
-
-
+    <!-- <script src="/js/loadComponents.js"></script> -->
+  </body>
 </html>
