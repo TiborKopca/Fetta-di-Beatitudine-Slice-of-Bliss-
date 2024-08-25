@@ -73,6 +73,10 @@
   }
 }
 
+.subparagraphs__list {
+  list-style: disc;
+  padding-left: 2rem;
+}
 /* FIXED IMAGE */
 .fixedimg {
   background-image: url(../img/avif/legalnotice-forn.avif);
